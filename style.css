@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+body {
+    background: rgb(96, 163, 187);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: white;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 250px;
+    border-bottom-left-radius: 250px;
+    border-top-right-radius: 250px;
+    border-bottom-right-radius: 250px;
+
+}
+.container .left_side {
+    position: relative;
+    background: rgb(103, 103, 103);
+    padding: 40px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.profileText .imageBox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imageBox img{
+    position: absolute;
+    top:-11px;
+    left:0;
+    width: 100%;
+    height: 123%;
+    object-fit: cover;
+
+}
+.profileText h2{
+    color:#fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    /* text-transform: uppercase; */
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contact {
+    padding-top: 40px;
+}
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    margin-bottom: 20px;
+}
+.contact ul {
+    position: relative;
+}
+
+.contact ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+
+}
+.contact ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contact ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(58, 58, 58);
+
+}
+
+.education li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+.education h5 {
+    color: rgb(96, 163, 187);
+    font-weight:500;
+}
+.education h4:nth-child(4) {
+    color: #fff;
+    font-weight:500;
+}
+.education h4 {
+    color: #fff;
+    font-weight:500;
+}
+.education .nzwau{
+    color: #fff;
+    font-weight: 300;
+}
+
+.lngugs li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    color: #fff;
+}
+
+
+.container .right_side {
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.Omnie {
+    color: rgb(96, 163, 187);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: rgb(135, 135, 135);
+}
+
+.aboutexp{
+    margin-bottom: 50px;
+}
+
+.aboutexp:last-child {
+    margin-bottom: 0;
+}
+
+.Omnie2 {
+    color: rgb(96, 163, 187);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.dlcv {
+    color: rgb(96, 163, 187);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: rgb(96, 163, 187);
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(96, 163, 187);
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: rgb(96, 163, 187);
+}
+
+
+
+
+
+/* CSS */
+.button-92 {
+  --c: #fff;
+  /* text color */
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+  rgb(96, 163, 187);
+  /* background color */
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+.button-92:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.button-92 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+}
+
